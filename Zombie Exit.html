@@ -175,6 +175,8 @@ fly:'Flyers',kills:'Kills',nxt:'Next weapon in {n} kills',maxw:'Weapon at max le
 w:['Pistol','Submachine Gun','Assault Rifle','Shotgun','Plasma Cannon']}};
 let S={lang:detLang(),gfx:'high',sens:1,vol:.8,mus:.6};
 try{Object.assign(S,JSON.parse(localStorage.getItem('zf-set')||'{}'))}catch(e){}
+const launcherLang=new URLSearchParams(location.search).get('launcherLang');
+if(['pt','ptpt','en','es','ru'].includes(launcherLang)){S.lang=launcherLang;save();}
 if(!['high','med','low'].includes(S.gfx)){S.gfx='high';S.gfxDone=0}
 const save=()=>{try{localStorage.setItem('zf-set',JSON.stringify(S))}catch(e){}};
 const tr=(k,a)=>{let s=(T[S.lang]||T.pt)[k];if(s===undefined)s=T.pt[k]||k;if(a)for(const x in a)s=s.replace('{'+x+'}',a[x]);return s};
