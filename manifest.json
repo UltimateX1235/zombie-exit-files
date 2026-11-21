@@ -1,10 +1,10 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "files": [
     {
       "path": "Zombie Exit.html",
       "url": "https://raw.githubusercontent.com/UltimateX1235/zombie-exit-files/main/Zombie%20Exit.html.html",
-      "sha256": "76E6275649AA6F3332931C6E8490D13B71ABCB343FABFB863345C9EE5C0DCC59"
+      "sha256": "2600062A6CBED6DC8623245E8620AFB2F129708DB1B4A14DC510E6CF14F29831"
     },
     {
       "path": "three.min.js",
